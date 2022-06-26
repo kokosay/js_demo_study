@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>分享图片网</title>
+	<link rel="stylesheet" href="css/index_css.css">
+	<script src="myjs/index_js.js"></script>
+	<style>
+	</style>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<div class="nvas_box">
+		<div class="nav">
+			<a href=""><img src="imgs/logo.png" alt=""></a>
+			<a class="first_li" href="">首页</a>
+			<a href="">动漫</a>
+			<a href="">游戏</a>
+			<a href="">美女</a>
+			<a href="">跑车</a>
+			<a href="">萌宠</a>
+			<a href="">风景</a>
+		</div>
+
+		<!-- 登录区域 -->
+		<div class="login_nav">
+			<button>探索</button>
+			<button><a href="login_in_demo.html">登录</a></button>
+			<button> 加入</button>
+		</div>
+	</div>
+	<!-- 搜索区域 -->
+	<div class="body_box">
+		<img class="huangfu" src="imgs/bodyimg/pic1.jpg" alt="" title="更换皮肤">
+		<img class="huangfu" src="imgs/bodyimg/pic2.jpg" alt="" title="更换皮肤">
+		<img class="huangfu" src="imgs/bodyimg/pic3.jpg" alt="" title="更换皮肤">
+		<img class="huangfu" src="imgs/bodyimg/pic4.jpg" alt="" title="更换皮肤">
+		<img class="huangfu" src="imgs/bodyimg/pic5.jpg" alt="" title="更换皮肤">
+		<img class="huangfu" src="imgs/bodyimg/pic6.jpg" alt="" title="更换皮肤">
+
+		<div class="box_center">
+			<h3>令人惊叹的免费图片和壁纸库存</h3>
+			<h6>图片来自网路</h6>
+			<input type="text" name="" id="search">
+			<button>搜索</button>
+			<div class="hot_search">
+				<a href="">热门搜索：</a>
+				<a href="">天空</a>
+				<a href="">背景</a>
+				<a href="">商业</a>
+				<a href="">自然</a>
+				<a href="">食物</a>
+				<a href="">海滩</a>
+			</div>
+		</div>
+	</div>
+	<!-- 图片展示区域 -->
+	<div>
+		<ul class="img_left">
+
+			<li>
+				<img src="imgs/pic/pic1.jpg" alt="">
+				<img src="imgs/pic/pic2.jpg" alt="">
+				<img src="imgs/pic/pic3.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/pic/pic4.jpg" alt="">
+				<img src="imgs/pic/pic5.jpg" alt="">
+				<img src="imgs/pic/pic6.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/pic/pic7.jpg" alt="">
+				<img src="imgs/pic/pic8.jpg" alt="">
+				<img src="imgs/pic/pic9.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/pic/pic10.jpg" alt="">
+				<img src="imgs/pic/pic11.jpg" alt="">
+				<img src="imgs/pic/pic12.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/pic/pic13.jpg" alt="">
+				<img src="imgs/pic/pic14.jpg" alt="">
+				<img src="imgs/pic/pic15.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/pic/pic1599966749.jpg" alt="">
+				<img src="imgs/pic/pic1600065586.jpg" alt="">
+				<img src="imgs/pic/pic1600065617.jpg" alt="">
+			</li>
+		</ul>
+
+
+		<ul class="img_right">
+			<li>
+				<img src="imgs/pic/shubang/pic1597395822.jpg" alt="">
+				<img src="imgs/pic/shubang/pic1599714765.jpg" alt="">
+
+			</li>
+			<li>
+				<img src="imgs/pic/shubang/pic1599797659.jpg" alt="">
+				<img src="imgs/pic/shubang/pic1599797898.jpg" alt="">
+
+			</li>
+			<li>
+				<img src="imgs/pic/shubang/pic1599905778.jpg" alt="">
+				<img src="imgs/pic/shubang/pic1652248134.jpg" alt="">
+
+			</li>
+			<li>
+				<img src="imgs/pic/shubang/pic1653888121.jpg" alt="">
+				<img src="imgs/pic/shubang/pic1654166490.jpg" alt="">
+			</li>
+		</ul>
+
+	</div>
+	<div class="more_pag">
+		<button>查看更多</button>
+	</div>
+	<div class="floor">
+
+	</div>
+	<script>
+
+		var himg = document.querySelector(".body_box").querySelectorAll('.huangfu');
+		var gimg = document.querySelector(".body_box");
+		console.log(himg.length);
+		for (var i = 0; i <= himg.length; i++) {
+			himg[i].onclick = function () {
+				gimg.style.background = "url(" + this.src + ") no-repeat center";
+				console.log(this.src);
+			}
+		}
+	</script>
+</body>
+
+</html>
